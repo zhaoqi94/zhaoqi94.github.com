@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="机器学习,">
 
 
 
@@ -123,13 +123,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本、非线性及高维模式识别中表现出许多特有的优势。从历史上看，支持向量机可以看做是感知机和其他简单的线性分类器的一种延伸和推广。支持向量机在上世纪90年代到2012之间非常火热，被广泛应用于模式识别和机器学习任务中，在上学期的智能技术课上，叶老师说支持向量">
+<meta name="keywords" content="机器学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="支持向量机SVM(0):简介">
+<meta property="og:url" content="http://yoursite.com/2018/11/17/svm-0-introduction/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本、非线性及高维模式识别中表现出许多特有的优势。从历史上看，支持向量机可以看做是感知机和其他简单的线性分类器的一种延伸和推广。支持向量机在上世纪90年代到2012之间非常火热，被广泛应用于模式识别和机器学习任务中，在上学期的智能技术课上，叶老师说支持向量">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-16T18:39:26.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="支持向量机SVM(0):简介">
+<meta name="twitter:description" content="支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本、非线性及高维模式识别中表现出许多特有的优势。从历史上看，支持向量机可以看做是感知机和其他简单的线性分类器的一种延伸和推广。支持向量机在上世纪90年代到2012之间非常火热，被广泛应用于模式识别和机器学习任务中，在上学期的智能技术课上，叶老师说支持向量">
 
 
 
@@ -159,13 +164,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/17/svm-0-introduction/">
 
 
 
 
 
-  <title>Hexo</title>
+  <title>支持向量机SVM(0):简介 | Hexo</title>
   
 
 
@@ -184,8 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -258,9 +262,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -290,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/17/svm-0-introduction/" itemprop="url">支持向量机SVM(0):简介</a></h1>
+          <h1 class="post-title" itemprop="name headline">支持向量机SVM(0):简介</h1>
         
 
         <div class="post-meta">
@@ -342,9 +344,7 @@
       
 
       
-        
-          
-            <p>支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本、非线性及高维模式识别中表现出许多特有的优势。从历史上看，支持向量机可以看做是感知机和其他简单的线性分类器的一种延伸和推广。支持向量机在上世纪90年代到2012之间非常火热，被广泛应用于模式识别和机器学习任务中，在上学期的智能技术课上，叶老师说支持向量机和Adaboost算法就是20世纪初机器学习中的屠龙刀和倚天剑！</p>
+        <p>支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本、非线性及高维模式识别中表现出许多特有的优势。从历史上看，支持向量机可以看做是感知机和其他简单的线性分类器的一种延伸和推广。支持向量机在上世纪90年代到2012之间非常火热，被广泛应用于模式识别和机器学习任务中，在上学期的智能技术课上，叶老师说支持向量机和Adaboost算法就是20世纪初机器学习中的屠龙刀和倚天剑！</p>
 <p>但是自从2012年AlexNet诞生以来，神经网络和深度学习大放异彩，导致了SVM的研究和应用日渐没落，最直接的体现就是：计算机视觉社区的研究方式从原本的提取特征+SVM分类的两阶段变成了利用深度学习直接训练端到端的模型。但是，作为一种经典的机器学习模型，支持向量机的思想比如最大间隔分类、对偶优化、软间隔、核技巧等仍然有很高的学习价值；而且，在机器学习工作的面试中，面试官甚至会让我们去手推SVM！</p>
 <p>这篇文章是我对SVM专题总结的第0篇，我会从整体上简要介绍SVM的知识体系和各种知识，主要是一些结论性的东西，详细的推导请参考后续文章。</p>
 <p>我将从以下几个方面来介绍SVM：</p>
@@ -436,8 +436,6 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
 \end{aligned}
 \end{equation}</script><p>其中$K_{ij}=K(x_i,x_j),i,j=1,2$</p>
 <h3 id="6-1V1-1VR：多分类支持向量机"><a href="#6-1V1-1VR：多分类支持向量机" class="headerlink" title="6. 1V1 1VR：多分类支持向量机"></a>6. 1V1 1VR：多分类支持向量机</h3><h3 id="7-梯度下降求解SVM：Hinge-Loss（合页损失）"><a href="#7-梯度下降求解SVM：Hinge-Loss（合页损失）" class="headerlink" title="7. 梯度下降求解SVM：Hinge Loss（合页损失）"></a>7. 梯度下降求解SVM：Hinge Loss（合页损失）</h3>
-          
-        
       
     </div>
     
@@ -452,261 +450,36 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/16/my-new-article/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/16/my-new-article/" itemprop="url">my_new_article</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-16T23:58:29+08:00">
-                2018-11-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/16/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+              <a href="/2018/11/16/my-new-article/" rel="next" title="my_new_article">
+                <i class="fa fa-chevron-left"></i> my_new_article
+              </a>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-16T19:23:08+08:00">
-                2018-11-16
-              </time>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -716,10 +489,11 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -727,6 +501,10 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
 
 
           
+
+  
+
+
 
         </div>
         
@@ -747,8 +525,17 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -799,6 +586,22 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-SVM的分类原则：最大间隔分类"><span class="nav-number">1.</span> <span class="nav-text">1. SVM的分类原则：最大间隔分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-问题的转化：拉格朗日对偶"><span class="nav-number">2.</span> <span class="nav-text">2. 问题的转化：拉格朗日对偶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-非线性数据：软间隔SVM"><span class="nav-number">3.</span> <span class="nav-text">3. 非线性数据：软间隔SVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-从线性分类器到非线性分类器：核技巧"><span class="nav-number">4.</span> <span class="nav-text">4. 从线性分类器到非线性分类器：核技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-高效的学习算法：SMO算法"><span class="nav-number">5.</span> <span class="nav-text">5. 高效的学习算法：SMO算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1V1-1VR：多分类支持向量机"><span class="nav-number">6.</span> <span class="nav-text">6. 1V1 1VR：多分类支持向量机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-梯度下降求解SVM：Hinge-Loss（合页损失）"><span class="nav-number">7.</span> <span class="nav-text">7. 梯度下降求解SVM：Hinge Loss（合页损失）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -932,6 +735,10 @@ f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一�
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
