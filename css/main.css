@@ -1658,10 +1658,6 @@ pre .javascript .function {
 .rtl.post-title {
   font-family: UKIJ Ekran;
 }
-.MathJax_Display {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1826,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c4ff75;
+  background: #ff068e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2907,4 +2903,17 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.menu .menu-item a {
+  font-size: 15px;
+}
+.menu .menu-item {
+  margin: 5px 15px;
+}
+.menu .menu-item a:hover {
+  border-bottom-color: rgba(161,102,171,0);
 }
