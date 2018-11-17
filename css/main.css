@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff068e;
+  background: #6e8eb4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2908,11 +2908,15 @@ hr {
   overflow-x: auto;
   overflow-y: hidden;
 }
+.menu {
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
 .menu .menu-item a {
-  font-size: 15px;
+  font-size: 16px;
 }
 .menu .menu-item {
-  margin: 5px 15px;
+  margin: 0px;
 }
 .menu .menu-item a:hover {
   border-bottom-color: rgba(161,102,171,0);
