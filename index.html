@@ -1,1023 +1,497 @@
 <!DOCTYPE html>
 
+<html style="display:none">
+    <head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <!--
+        © neoFelhz
+        GitHub: https://github.com/neoFelhz/hexo-theme-spectre
+        Version: 0.1.1
+    -->
+    <script>
+        window.materialVersion = "0.1.1",
+        window.oldVersion = [
+            
+                
+                    "0.1.0"
+                
+            
+        ]
+    </script>
 
+    <!-- DNS Prefetch -->
+    
 
-  
+    <!-- Meta & Title & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+<!-- Title -->
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#222">
+<title>zhaoqi94&#39;s Blog</title>
 
+<!-- Favicons -->
+<link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+<link rel="icon" href="/img/favicon.png">
 
+<meta name="format-detection" content="telephone=no">
+<meta name="description" itemprop="description" content="">
+<meta name="keywords" content="">
+<meta name="theme-color" content="#0097A7">
 
-
-
-
-
-
-
+<!-- Disable Fucking Bloody Baidu Tranformation -->
 <meta http-equiv="Cache-Control" content="no-transform">
 <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
+    <!-- Import File -->
+    <!-- Import Lsloader -->
+<script>!function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}},lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}},lsloader.setLS=function(a,b){try{localStorage.setItem(a,b)}catch(c){}},lsloader.getLS=function(a){var b="";try{b=localStorage.getItem(a)}catch(c){b=""}return b},versionString="/*"+(window.materialVersion||"unknownVersion")+"*/",lsloader.clean=function(){var a,b;try{for(a=[],b=0;b<localStorage.length;b++)a.push(localStorage.key(b));a.forEach(function(a){var c,b=lsloader.getLS(a);window.oldVersion&&(c=window.oldVersion.reduce(function(a,c){return a||-1!==b.indexOf("/*"+c+"*/")},!1),c&&lsloader.removeLS(a))})}catch(c){}},lsloader.clean(),lsloader.load=function(a,b,c,d){var e,f;if("boolean"==typeof c&&(d=c,c=void 0),d=d||!1,c=c||function(){},e=this.getLS(a),e&&-1===e.indexOf(versionString))return this.removeLS(a),this.requestResource(a,b,c,d),void 0;if(e){if(f=e.split(versionString)[0],f!=b)return console.log("reload:"+b),this.removeLS(a),this.requestResource(a,b,c,d),void 0;e=e.split(versionString)[1],d?(this.jsRunSequence.push({name:a,code:e}),this.runjs(b,a,e)):(document.getElementById(a).appendChild(document.createTextNode(e)),c())}else this.requestResource(a,b,c,d)},lsloader.requestResource=function(a,b,c,d){var e=this;d?this.iojs(b,a,function(a,b,c){e.setLS(b,a+versionString+c),e.runjs(a,b,c)}):this.iocss(b,a,function(c){document.getElementById(a).appendChild(document.createTextNode(c)),e.setLS(a,b+versionString+c)},c)},lsloader.iojs=function(a,b,c){var e,d=this;d.jsRunSequence.push({name:b,code:""});try{e=new XMLHttpRequest,e.open("get",a,!0),e.onreadystatechange=function(){if(4==e.readyState){if((e.status>=200&&e.status<300||304==e.status)&&""!=e.response)return c(a,b,e.response),void 0;d.jsfallback(a,b)}},e.send(null)}catch(f){d.jsfallback(a,b)}},lsloader.iocss=function(a,b,c,d){var f,e=this;try{f=new XMLHttpRequest,f.open("get",a,!0),f.onreadystatechange=function(){if(4==f.readyState){if((f.status>=200&&f.status<300||304==f.status)&&""!=f.response)return c(f.response),d(),void 0;e.cssfallback(a,b,d)}},f.send(null)}catch(g){e.cssfallback(a,b,d)}},lsloader.iofonts=function(a,b,c,d){var f,e=this;try{f=new XMLHttpRequest,f.open("get",a,!0),f.onreadystatechange=function(){if(4==f.readyState){if((f.status>=200&&f.status<300||304==f.status)&&""!=f.response)return c(f.response),d(),void 0;e.cssfallback(a,b,d)}},f.send(null)}catch(g){e.cssfallback(a,b,d)}},lsloader.runjs=function(a,b,c){var d,e,f;if(b&&c)for(d in this.jsRunSequence)this.jsRunSequence[d].name==b&&(this.jsRunSequence[d].code=c);this.jsRunSequence[0]&&this.jsRunSequence[0].code&&"failed"!=this.jsRunSequence[0].status?(e=document.createElement("script"),e.appendChild(document.createTextNode(this.jsRunSequence[0].code)),e.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(e),this.jsRunSequence.shift(),this.jsRunSequence.length>0&&this.runjs()):this.jsRunSequence[0]&&"failed"==this.jsRunSequence[0].status&&(f=this,e=document.createElement("script"),e.src=this.jsRunSequence[0].path,e.type="text/javascript",this.jsRunSequence[0].status="loading",e.onload=function(){f.jsRunSequence.shift(),f.jsRunSequence.length>0&&f.runjs()},document.body.appendChild(e))},lsloader.tagLoad=function(a,b){this.jsRunSequence.push({name:b,code:"",path:a,status:"failed"}),this.runjs()},lsloader.jsfallback=function(a,b){if(!this.jsnamemap[b]){this.jsnamemap[b]=b;for(var c in this.jsRunSequence)this.jsRunSequence[c].name==b&&(this.jsRunSequence[c].code="",this.jsRunSequence[c].status="failed",this.jsRunSequence[c].path=a);this.runjs()}},lsloader.cssfallback=function(a,b,c){var d,e;this.cssnamemap[b]||(this.cssnamemap[b]=1,d=document.createElement("link"),d.type="text/css",d.href=a,d.rel="stylesheet",d.onload=d.onerror=c,e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(d,e))},lsloader.runInlineScript=function(a,b){var c=document.getElementById(b).innerText;this.jsRunSequence.push({name:a,code:c}),this.runjs()},lsloader.css=function(a,b){"undefined"==typeof window.lsLoadCSSMaxNums&&(window.lsLoadCSSMaxNums=0),window.lsLoadCSSMaxNums++,lsloader.load(a,b,function(){"undefined"==typeof window.lsLoadCSSNums&&(window.lsLoadCSSNums=0),window.lsLoadCSSNums++,window.lsLoadCSSNums==window.lsLoadCSSMaxNums&&(document.documentElement.style.display="")},!1)},lsloader.js=function(a,b){lsloader.load(a,b,!0)}}();</script>
+<!-- Import queue -->
+<script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+<!-- Import CSS -->
+<style id="spectre_css"></style><script>lsloader.css("spectre_css","/libs/spectre/spectre.min.css")</script>
+<style id="spectre_exp_css"></style><script>lsloader.css("spectre_exp_css","/libs/spectre/spectre-exp.min.css")</script>
+<style id="style_css"></style><script>lsloader.css("spectre_exp_css","/css/style.min.css")</script>
+<style id="prism_css"></style><script>lsloader.css("prism_css","/css/prism.min.css")</script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-    
-      
+    <!-- Site Verification -->
     
 
-    
-  
 
-  
-    
-      
+    <!-- RSS -->
     
 
-    
-  
-
-  
-
-  
-    
-      
+    <!-- The Open Graph & Twitter Card Protocol -->
     
 
-    
-  
-
-  
-    
-    
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|18:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
+<meta property="og:title" content="zhaoqi94&#39;s Blog">
+<meta property="og:type" content="blog">
+<meta property="og:url" content="http://yoursite.com/">
+<meta property="og:image" content="/img/favicon.png">
+<meta property="og:description" content="">
 
 
 
 
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+
+    <meta property="twitter:site" content="https://twitter.com/twitter">
+    <meta property="twitter:creator" content="twitter">
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Canonical link -->
+    <link rel="canonical" href="http://yoursite.com/">
+
+    <!-- Structured Data -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Zhao Qi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
     },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
+    "publisher": {
+        "@type": "Organization",
+        "name": "zhaoqi94&#39;s Blog",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "url": "http://yoursite.com",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/img/favicon.png"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com"
+    },
+    "keywords": "",
+    "description": ""
+}
 </script>
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
 
-
-
-
-
-  <title>Hexo</title>
-  
-
-
-
-
-
-
-
+    <!-- Custom Head -->
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
     
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <body>
+        <div class="off-canvas off-canvas-sidebar-show">
+            <!-- off-screen toggle button -->
+            <a class="off-canvas-toggle btn btn-link btn-action" href="#sidebar">
+                <i class="icon material-icons casino-icons">menu</i>
+            </a>
+
+            <div id="sidebar" class="off-canvas-sidebar">
+                <div id="sidebar-content">
+                    <ul class="nav">
+<a class="off-canvas-toggle btn btn-link btn-action" href="#close">
+    <i class="icon material-icons casino-icons">arrow_back</i>
+</a>
+<div class="sidebar-top"></div>
+<span class="h4 text-center">zhaoqi94&#39;s Blog</span>
+<div class="divider"></div>
+    <!-- Homepage -->
+    
+        <li class="nav-item">
+            <a href="/">
+                
+                    <i class="icon material-icons sidebar-icons">home</i>
+                
+            Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives -->
+    
+        <li class="nav-item">
+            <a href="/archives/">
+                
+                    <i class="icon material-icons sidebar-icons">inbox</i>
+                
+            Archives
+            </a>
+        </li>
+        
+    
+
+    <!-- Search -->
+    <!---->
+
+    <!-- Pages  -->
+    
+        <li class="nav-item">
+            <a href="/about">
+                
+                    <i class="icon material-icons sidebar-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li class="nav-item">
+            <a href="/archives/" style="display: flex">
+                Number of articles
+                <div style="flex-grow: 1;padding-left: 1rem!important"></div>
+                <span class="sidebar-badge">3</span>
+            </a>
+        </li>
+        
+    
+
+</ul>
+
+
+                </div>
+            </div>
+
+            <a class="off-canvas-overlay" href="#close"></a>
+
+            <div class="off-canvas-content">
+                <main>
+                    
+<div class="container container-header">
+    <div class="columns">
+        <div class="column col-xs-12 col-8 daily_pic">
+    <div class="card">
+        <div class="card-image" style="background-image:url(/img/daily_pic.png)">
+            <p>Hi, nice to meet you</p>
+        </div>
+        <div class="card-footer bg-gray hide-xs">
+            <figure class="avatar">
+                <img src="/img/avatar.png">
+            </figure>
+            <div class="card-title">Zhao Qi</div>
+        </div>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
 </div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/17/svm-0-introduction/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/17/svm-0-introduction/" itemprop="url">支持向量机SVM(0):简介</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-17T01:32:30+08:00">
-                2018-11-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="column col-xs-12 col-4 author_info">
+    <div class="card">
+        <div class="card-header">
+            <a href="#" target="_blank">
+                <img src="/img/logo.png" alt="logo">
+            </a>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本、非线性及高维模式识别中表现出许多特有的优势。从历史上看，支持向量机可以看做是感知机和其他简单的线性分类器的一种延伸和推广。支持向量机在上世纪90年代到2012之间非常火热，被广泛应用于模式识别和机器学习任务中，在上学期的智能技术课上，叶老师说支持向量机和Adaboost算法就是20世纪初机器学习中的屠龙刀和倚天剑！</p>
-<p>但是自从2012年AlexNet诞生以来，神经网络和深度学习大放异彩，导致了SVM的研究和应用日渐没落，最直接的体现就是：计算机视觉社区的研究方式从原本的提取特征+SVM分类的两阶段变成了利用深度学习直接训练端到端的模型。但是，作为一种经典的机器学习模型，支持向量机的思想比如最大间隔分类、对偶优化、软间隔、核技巧等仍然有很高的学习价值；而且，在机器学习工作的面试中，面试官甚至会让我们去手推SVM！</p>
-<p>这篇文章是我对SVM专题总结的第0篇，我会从整体上简要介绍SVM的知识体系和各种知识，主要是一些结论性的东西，详细的推导请参考后续文章。</p>
-<p>我将从以下几个方面来介绍SVM：</p>
-<ol>
-<li>SVM的分类原则：最大间隔分类</li>
-<li>问题的转化：拉格朗日对偶</li>
-<li>非线性数据：软间隔支持SVM</li>
-<li>从线性分类器到非线性分类器：核技巧</li>
-<li>高效的学习算法：SMO算法</li>
-<li>1V1 1VR：多分类支持向量机</li>
-<li>梯度下降求解SVM：Hinge Loss（合页损失）</li>
-</ol>
-<h3 id="1-SVM的分类原则：最大间隔分类"><a href="#1-SVM的分类原则：最大间隔分类" class="headerlink" title="1. SVM的分类原则：最大间隔分类"></a>1. SVM的分类原则：最大间隔分类</h3><p>我们首先介绍线性的SVM，也就是说它的模型就是简单的一条直线/超平面：$wx+b=0$，其中$w$和$b$都是模型的参数,均为向量。对于某个x,如果$wx+b&gt;0$，我们就预测它的标签为正，否则为负。</p>
-<p>对于线性可分的二分类数据而言，也许有无数条直线/分割超平面$wx+b=0$都可以将其分开，如果使用感知机算法，那么由于其随机性，我们可能得到任意一条直线，但是这些直线是等价的吗？显然是不等价的。选择不同的直线可能产生不同的泛化误差，那我们应该如何选择一条比较好的直线？以下图为例，在于这三条直线，你觉得哪一条直线最适合？</p>
-<p>如果你选择第三条直线，恭喜你答对了！</p>
-<p>于是我们就可以引出SVM的分类原则了（也就是选择直线的准则）：距离直线最近的点到直线的距离尽可能大（这就是最大间隔的含义）。我个人觉得SVM最大的贡献或者说他最牛逼的思想，就是在线性分类中引入最大间隔分类的思想。</p>
-<p>我们将这条分类准则用数学语言翻译，就得到如下的SVM基本优化问题（或者说原问题，对应于后面的对偶问题）：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{w,b}  &\quad \frac{1}{2}\Vert{w}\Vert^2\\
-  \mathrm{s.t.}   &\quad y_i(w \cdot x_i + b) - 1 \ge 0,  \space i=1,2,...,N \\
-\end{aligned}
-\end{equation}</script><p>其中$D={ (x_i,y_i),i=1,2,…,N }$是训练集。<br>这个问题很显然是个二次规划问题，于是我们可以直接调用二次规划包进行求解。</p>
-<h3 id="2-问题的转化：拉格朗日对偶"><a href="#2-问题的转化：拉格朗日对偶" class="headerlink" title="2. 问题的转化：拉格朗日对偶"></a>2. 问题的转化：拉格朗日对偶</h3><p>虽然使用二次规划包求解上面的基本问题就能得到$w$和$b$，但是SVM一般不会直接去求解原始问题，而是使用拉格朗日对偶法从原始问题导出一个对偶问题，将问题转化为对偶问题的求解。</p>
-<p>利用拉格朗日对偶，我们导出如下的对偶问题：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{\alpha}  \quad & \frac{1}{2}\sum_{i=1}^{N}\sum_{j=1}^{N} \alpha_i\alpha_j y_iy_j(x_i \cdot x_j) - \sum_{i=1}^{N}\alpha_i\\
-  \mathrm{s.t.}   \quad & \sum_{i=1}^{N}\alpha_iy_i=0\\
-  \quad & \alpha_i \ge 0,\space i=1,2,...,N
-\end{aligned}
-\end{equation}</script><p>其中, $\alpha_i$是拉格朗日乘子。</p>
-<p>我们发现，SVM的对偶问题依然是个二次规划问题，所以仍然可以使用二次规划方法进行求解，求出$\alpha_i$后，我们利用公式可以直接得出$w$和$b$：</p>
-<script type="math/tex; mode=display">
-\begin{align}
-&w=\sum_{i=1}^{N}\alpha_i y_i x_i \\
-&b=y^* - \sum_{i=1}^{N}\alpha_i y_i(x_i \cdot x^* ) \\
-\end{align}</script><p>其中$(x^*,y^*)$是训练集中任意一个对应的$\alpha \ge 0$的样本点（也就是支持向量）</p>
-<h3 id="3-非线性数据：软间隔SVM"><a href="#3-非线性数据：软间隔SVM" class="headerlink" title="3. 非线性数据：软间隔SVM"></a>3. 非线性数据：软间隔SVM</h3><p>上面的支持向量机是线性支持向量机，对于线性可分问题（即数据集是线性可分的），线性支持向量机的原始问题和对偶问题都是有解的；但是对于线性不可分问题（即数据集是线性不可分的），线性支持向量机的原始问题的的不等式约束条件无法同时满足，因此，上述的SVM的建模，是无法解决用于非线性问题的。<br>我们重新建模SVM,修改硬间隔最大化为软间隔最大化，这样，我们就能将SVM扩展到线性不可分问题。</p>
-<p>我们在原始问题中引入松弛变量$\xi$和惩罚因子$C$，得到软间隔SVM的原始问题：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{w,b}    \quad & \frac{1}{2}\Vert{w}\Vert^2 + C \sum_{i=1}^N\xi_i\\
-  \mathrm{s.t.}  \quad & y_i(w \cdot x_i + b)  \ge 1 - \xi_i, \space i=1,2,...,N \\
-                \quad & \xi_i \ge 0 \\  
-\end{aligned}
-\end{equation}</script><p>其中$D={ (x_i,y_i),i=1,2,…,N }$是训练集。</p>
-<p>进而可以得到对偶问题为：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{\alpha}  \quad & \frac{1}{2}\sum_{i=1}^{N}\sum_{j=1}^{N} \alpha_i\alpha_j y_iy_j(x_i \cdot x_j) - \sum_{i=1}^{N}\alpha_i\\
-  \mathrm{s.t.}   \quad & \sum_{i=1}^{N}\alpha_iy_i=0\\
-  \quad & 0 \le \alpha_i \le C,\space i=1,2,...,N
-\end{aligned}
-\end{equation}</script><h3 id="4-从线性分类器到非线性分类器：核技巧"><a href="#4-从线性分类器到非线性分类器：核技巧" class="headerlink" title="4. 从线性分类器到非线性分类器：核技巧"></a>4. 从线性分类器到非线性分类器：核技巧</h3><p>对于SVM的对偶问题，求解这个问题，我们并不需要$x_i$本身，我们只需要要$x_i$和$x_j$的內积即$(x_i \cdot y_i)$即可。如果我们利用一个核函数$K(x,z)$替代这个內积$(x_i \cdot y_i)$，我们就得到了应用了核技巧的SVM的对偶问题：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{\alpha}  \quad & \frac{1}{2}\sum_{i=1}^{N}\sum_{j=1}^{N} \alpha_i\alpha_j y_iy_j K(x_i,x_j) - \sum_{i=1}^{N}\alpha_i\\
-  \mathrm{s.t.}   \quad & \sum_{i=1}^{N}\alpha_iy_i=0\\
-  \quad & 0 \le \alpha_i \le C,\space i=1,2,...,N
-\end{aligned}
-\end{equation}</script><p>使用了核技巧后，我们无法算出$w$的值，但我们可以直接得到SVM的决策函数：</p>
-<script type="math/tex; mode=display">
-f(x)=sign(\sum_{i=1}^N\alpha_i^* y_i K(x_i, x) + b)</script><p>只要选择一个支持向量，就能轻松得到$b$。</p>
-<p>利用核函数有什么好处呢？</p>
-<p>根据核函数的定义，存在某个特征映射$\phi$，对于任意的而$x$和$z$，$K(x,z)$可表达为$\phi(x)$和$\phi(z)$的內积，即$K(x,z)=\phi(x) \cdot \phi(z)$,如果将其带入上面的对偶问题，那么应用核函数其实就相当于先对数据集作非线性变换$\phi$，然后再应用线性SVM。这两种方式虽然是等价的，但是由于$\phi$极其复杂，比如说$\phi$是无穷维的，此时$K(x,z)$仍然是非常简单的，因此核函数能大大减少计算量。</p>
-<h3 id="5-高效的学习算法：SMO算法"><a href="#5-高效的学习算法：SMO算法" class="headerlink" title="5. 高效的学习算法：SMO算法"></a>5. 高效的学习算法：SMO算法</h3><p>虽然上述的学习问题都可以使用二次规划求解，但是由于二次规划的时空复杂度很高，往往几千个样本的数据就不行了，所以在实际中，没有什么人会使用二次规划求解SVM，人们往往采用一种更高效的算法：序列最小最优化算法（Sequential minimal optimization，SMO）。</p>
-<p>SMO算法是一种启发式算法，基本思路就是我们熟悉的分治法。它循环遍历整个数据集，用一些启发式准则每次选择出两个样本点$x_i$和$x_j$，并以这两个样本点对应的$\alpha_i$和$\alpha_j$为优化变量，其他所有的$\alpha$保持不变，这样就将N个变量的二次规划问题，转化为了两个变量的二次规划问题：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{\alpha_i,\alpha_j}  \quad & \frac{1}{2}\sum_{i=1}^{N}\sum_{j=1}^{N} \alpha_i\alpha_j y_iy_j K(x_i,x_j) - \sum_{i=1}^{N}\alpha_i\\
-  \mathrm{s.t.}   \quad & \sum_{i=1}^{N}\alpha_iy_i=0\\
-  \quad & 0 \le \alpha_i \le C,\space i=1,2,...,N
-\end{aligned}
-\end{equation}</script><p>或者化为(不妨假定选择的两个变量为$\alpha_1,\alpha_2$：</p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-  \min_{\alpha_1,\alpha_2}  \quad & \frac{1}{2}K_{11}\alpha_1^2+K_{22}\alpha_2^2+y_1y_2K_{12}\alpha_1\alpha_2 \\ 
-  \quad & -(\alpha_1+\alpha_2)+y_1\alpha_1\sum_{i=3}^Ny_1\alpha_1K_{i1}+y_2\alpha_2\sum_{i=3}^Ny_1\alpha_1K_{i2}\\
-  \mathrm{s.t.}   \quad & \alpha_1y_1+\alpha_2y_2=-\sum_{i=3}^{N}\alpha_iy_i=\zeta\\
-  \quad & 0 \le \alpha_i \le C,\space i=1,2
-\end{aligned}
-\end{equation}</script><p>其中$K_{ij}=K(x_i,x_j),i,j=1,2$</p>
-<h3 id="6-1V1-1VR：多分类支持向量机"><a href="#6-1V1-1VR：多分类支持向量机" class="headerlink" title="6. 1V1 1VR：多分类支持向量机"></a>6. 1V1 1VR：多分类支持向量机</h3><h3 id="7-梯度下降求解SVM：Hinge-Loss（合页损失）"><a href="#7-梯度下降求解SVM：Hinge-Loss（合页损失）" class="headerlink" title="7. 梯度下降求解SVM：Hinge Loss（合页损失）"></a>7. 梯度下降求解SVM：Hinge Loss（合页损失）</h3>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/16/my-new-article/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/16/my-new-article/" itemprop="url">my_new_article</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="card-footer bg-gray">
+            <div class="card-title show-xs">zhaoqi94&#39;s Blog</div>
+            <div style="flex-grow: 1;"></div>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-16T23:58:29+08:00">
-                2018-11-16
-              </time>
-            
+            <div class="dropdown dropdown-right float-right">
+<a class="btn btn-link btn-gray dropdown-toggle" tabindex="0"><i class="icon material-icons casino-icons">rss_feed</i></a>
+<ul class="menu">
+    <!-- Share Weibo -->
+    <li class="menu-item">
+        <a href="" target="_blank">RSS 订阅</a>
+    </li>
+    <li class="menu-item">
+        <a href="" target="_blank">站点地图</a>
+    </li>
+</ul>
+</div>
+            <div class="dropdown dropdown-right float-right">
+<a class="btn btn-link btn-gray dropdown-toggle" tabindex="0"><i class="icon material-icons casino-icons">share</i></a>
+<ul class="menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=zhaoqi94&#39;s Blog&url=http://yoursite.com&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">Share to Weibo</a>
+    </li>
+    
 
-            
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=zhaoqi94&#39;s Blog&url=http://yoursite.com&via=Zhao Qi" target="_blank">Share to Twitter</a>
+    </li>
+    
 
-            
-          </span>
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank">Share to Facebook</a>
+    </li>
+    
 
-          
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=http://yoursite.com" target="_blank">Share to Google+</a>
+    </li>
+    
 
-          
-            
-          
+    <!-- Share LinkedIn -->
+    
 
-          
-          
+    <!-- Share QQ -->
+    
 
-          
+    <!-- Share Telegram -->
+    
 
-          
-
-          
-
+</ul>
+</div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/16/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-16T19:23:08+08:00">
-                2018-11-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
+</div>
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">John Doe</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
-
-  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+<div class="container container-post-list">
+    <!-- Post List -->
+    
+        
+            
+    <div class="card no-thumbnail">
 
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
+    <div class="card-header">
+        <a class="card-title h5" href="/2018/11/17/svm-0-introduction/">支持向量机SVM(0):简介</a>
+        <div class="card-subtitle text-gray">2018-11-17</div>
+    </div>
+    <div class="card-body">
+        <p lang="zh-Hans">
+        
+            支持向量机（Support Vecoter Machines）是一种非常经典的分类模型，是由Cortes和Vapnik在1995提出的，在解决小样本...
+        
+    </p>
+    </div>
+    <div class="card-footer">
+        <div class="divider mt-0"></div>
+        <a href="/2018/11/17/svm-0-introduction/" class="btn btn-link float-left">Read more >></a>
+        
+    </div>
+</div>
 
 
         
+    
+        
+            
+    <div class="card no-thumbnail">
 
-
-
-
-
+    <div class="card-header">
+        <a class="card-title h5" href="/2018/11/16/my-new-article/">my_new_article</a>
+        <div class="card-subtitle text-gray">2018-11-16</div>
+    </div>
+    <div class="card-body">
+        <p lang="zh-Hans">
+        
+            
+        
+    </p>
+    </div>
+    <div class="card-footer">
+        <div class="divider mt-0"></div>
+        <a href="/2018/11/16/my-new-article/" class="btn btn-link float-left">Read more >></a>
+        
+    </div>
+</div>
 
 
         
-      </div>
-    </footer>
-
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
         
-      </div>
+            
+    <div class="card no-thumbnail">
+
+    <div class="card-header">
+        <a class="card-title h5" href="/2018/11/16/hello-world/">Hello World</a>
+        <div class="card-subtitle text-gray">2018-11-16</div>
+    </div>
+    <div class="card-body">
+        <p lang="zh-Hans">
+        
+            Welcome to Hexo
+        
+    </p>
+    </div>
+    <div class="card-footer">
+        <div class="divider mt-0"></div>
+        <a href="/2018/11/16/hello-world/" class="btn btn-link float-left">Read more >></a>
+        
+    </div>
+</div>
+
+
+        
+    
+</div>
+<div class="container container-index-nav">
     
 
-    
+</div>
+                </main>
+                <footer class="centered">
+    <div class="footer-content">
+        <div class="footer-sns-list">
+            <!-- Twitter -->
 
-  </div>
+    <a href="https://twitter.com/twitter" target="_blank">
+        <button class="footer-sns-btn footer-sns-twitter"></button></a>
 
-  
 
+<!-- Facebook -->
+
+    <a href="https://www.facebook.com/facebook" target="_blank">
+        <button class="footer-sns-btn footer-sns-facebook"></button></a>
+
+
+<!-- Google + -->
+
+    <a href="https://www.google.com/" target="_blank">
+        <button class="footer-sns-btn footer-sns-gplus"></button></a>
+
+
+<!-- Weibo -->
+
+
+<!-- Instagram -->
+
+
+<!-- Tumblr -->
+
+
+<!-- Github -->
+
+
+<!-- LinkedIn -->
+
+
+<!-- Zhihu -->
+
+
+<!-- Bilibili -->
+
+
+<!-- Telegram -->
+
+
+<!-- V2EX -->
+
+
+<!-- Segmentfault -->
+
+        </div>
+        <div class="footer-copyright">Copyright&nbsp;©&nbsp;<span year=""></span>
+            <a href="http://yoursite.com">zhaoqi94&#39;s Blog</a>
+        </div>
+        <div class="footer-develop">
+            <div>Powered by
+                <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a>
+            </div>
+            <div>Theme -
+                <a href="https://github.com/neoFelhz/hexo-theme-spectre" target="_blank" class="footer-develop-a">Spectre</a>
+            </div>
+        </div>
+    </div>
+</footer>
+                <div class="back-to-top rounded">
+    <a href="#"><i class="icon material-icons casino-icons">expand_less</i></a>
+</div>
+            </div>
+        </div>
+        <!-- Import JS -->
+<script>lsloader.js("lazy_js","/libs/js/lazyload.min.js")</script>
+
+<!-- Comment -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+    // Start Queue
+    window.onload = function() {
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    };
+</script>
 <script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+    
+        textContent.textContent = copyrightNow
+    
 </script>
 
+<!-- Console log -->
+<script>
+    !function(){for(var e=document.querySelectorAll('script[type="text/ls-javascript"]'),r=0;r<e.length;++r){var o=e[r];lsloader.runInlineScript(o.id,o.id)}}(),
+    console.log(" \n %c Spectre Theme | © neoFelhz | Verision 0.1.1 %c https://github.com/neoFelhz/hexo-theme-spectre ", "color: #fff; background-image: linear-gradient(90deg, rgb(236, 61, 1213) 0%, rgb(94, 108, 198) 100%); padding:5px 1px;", "background-image: linear-gradient(90deg, rgb(94, 108, 198) 0%, rgb(194, 194, 194) 0%); padding:5px 0;");
+</script>
+    </body>
+
+    
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-      MathJax.Hub.Config({
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-
-  
-
-  
-
-</body>
 </html>
